@@ -1,0 +1,30 @@
+<header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-menu">
+                <h2 class="home" routerLink="/">Home</h2>
+                <h2 class="weather" routerLink="/weather">Weather</h2>
+            </div>
+
+            <div class="menu-login">
+                <ul>
+                    <li routerLinkActive="active" *ngIf="!auth.currentUserValue">
+                        <a routerLink="/login">Login</a>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a routerLink="/registration">Registration</a>
+                    </li>
+                </ul>
+
+                <ul *ngIf="auth.currentUserValue">
+                    <li class="nav-item">
+                        <a routerLink="/login" class="nav-link active" aria-current="page" href="#" (click)="logout()">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,31 @@
+@import "../styles.scss";
+
+/* .container {
+    max-width: 1500px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    background-color: $light-color;
+    color: $toggle-color;
+} */
+
+.btn-toggle {
+    margin-top: -35px;
+    margin-bottom: 90px;
+
+    .togle-block {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .btn__modeTogle {
+        border-radius: 10px;
+        padding: 5px 10px;
+        outline: none;
+        border: 1px solid #0078aa;
+        color: #0078aa;
+        background: white;
+        font-size: 12px;
+        cursor: pointer;
+    }
+}
